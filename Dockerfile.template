@@ -17,6 +17,7 @@ RUN apt-get clean && apt-get update && apt-get upgrade -y && apt-get install -y 
   genisoimage \
   syslinux-common \
   pxelinux \
+  binutils \
   && rm -rf /var/lib/apt/lists/*
 
 # We need wimtools from debian unstable, but everything else (above) should be stable only
